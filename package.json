@@ -4,6 +4,7 @@
   "description": "Cosmetics store",
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync start --server --no-ui",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/DmBorozdin/Shopify#readme",
   "devDependencies": {
-    "browser-sync": "2.27.10"
+    "browser-sync": "2.27.10",
+    "eslint": "^8.22.0"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.0.96"
   }
 }

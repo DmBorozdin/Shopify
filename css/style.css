@@ -1,0 +1,20 @@
+.header__top, .header__top-setting, .header__top-offer, .header__top-contact, .phone, .email {
+    display: flex;
+    flex-direction: row ;
+}
+
+.header__top {
+    justify-content: space-between;
+}
+
+.header__top-text, .phone__number, .email__addres {
+    margin: 0;
+}
+
+.mdi-odnoklassniki{
+    transition: all 400ms ease-in-out 0s;
+}
+
+.mdi-odnoklassniki:hover {
+    transform: rotateY(180deg)
+}
