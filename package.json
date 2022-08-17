@@ -1,0 +1,22 @@
+{
+  "name": "shopify",
+  "version": "1.0.0",
+  "description": "Cosmetics store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmBorozdin/Shopify.git"
+  },
+  "author": "Dmitrii Borozdin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmBorozdin/Shopify/issues"
+  },
+  "homepage": "https://github.com/DmBorozdin/Shopify#readme",
+  "devDependencies": {
+    "browser-sync": "2.27.10"
+  }
+}
