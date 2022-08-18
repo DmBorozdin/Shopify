@@ -1,20 +1,132 @@
-.header__top, .header__top-setting, .header__top-offer, .header__top-contact, .phone, .email {
+body {
+    margin: 0;
+}
+
+body, input, textarea, button, select {
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none outside;
+}
+
+.header__top, .header__bottom, .header__top-setting, .header__top-offer, .header__top-contact, .language, .phone, .email, .currency {
     display: flex;
     flex-direction: row ;
+    align-items: center;
 }
 
 .header__top {
     justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    background-color: #272727;
+    padding: 0 15px;
+    font: 400 13px/20px Roboto, sans-sefir;
+    letter-spacing: 1px;
+}
+
+.header__top-setting {
+    padding: 0 15px;
 }
 
 .header__top-text, .phone__number, .email__addres {
     margin: 0;
 }
 
+.header__top-contact {
+    padding-right: 15px;
+}
+
+.language, .currency, .header__top-offer, .phone, .email {
+    color: #fff;
+}
+
+.language, .currency, .sale, .phone, .email {
+    cursor: pointer;
+}
+
+.language:hover, .currency:hover, .phone:hover, .email:hover {
+    color: #ff8149;
+}
+
+.language, .currency {
+    margin-right: 15px;
+}
+
+.language::after, .currency::after, .phone::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sale {
+    color: #ff8149;
+}
+
+.sale:hover {
+    color: #fff;
+}
+
+.phone {
+    padding-right: 8px;
+}
+
+.phone__number {
+    margin-right: 8px;
+}
+
 .mdi-odnoklassniki{
     transition: all 400ms ease-in-out 0s;
+    font-size: 16px;
 }
 
 .mdi-odnoklassniki:hover {
     transform: rotateY(180deg)
+}
+
+.mdi-chevron-down {
+    padding-right: 15px;
+}
+
+.currency__flag {
+    width: 16px;
+    height: 16px;
+    background-image: url(/img/flag_usa.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.header__bottom {
+    padding: 0 30px;
+    height: 70px;
+}
+
+.header__burger {
+    width: 15px;
+    height: 2px;
+    background-color: #111;
+    position: relative;
+    margin-right: 15px;
+}
+
+.header__burger::before, .header__burger::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #111;
+    position: absolute;
+}
+
+.header__burger::before {
+    top: 5px;
+}
+
+.header__burger::after {
+    bottom: 5px;
+}
+
+.header__logo-img {
+    vertical-align: bottom;
 }
