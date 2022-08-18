@@ -7,10 +7,15 @@ body, input, textarea, button, select {
 }
 
 ul {
-    list-style: none outside;
+    list-style-type: none;
+    padding: 0;
 }
 
-.header__top, .header__bottom, .header__top-setting, .header__top-offer, .header__top-contact, .language, .phone, .email, .currency {
+a{
+    text-decoration: none;
+}
+
+.header__top, .header__bottom, .header__top-setting, .header__top-offer, .header__top-contact, .language, .phone, .email, .currency, .menu__ul, .left-menu, .right-menu {
     display: flex;
     flex-direction: row ;
     align-items: center;
@@ -83,10 +88,10 @@ ul {
 }
 
 .mdi-odnoklassniki:hover {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
-.mdi-chevron-down {
+.header__top .mdi-chevron-down {
     padding-right: 15px;
 }
 
@@ -101,6 +106,9 @@ ul {
 .header__bottom {
     padding: 0 30px;
     height: 70px;
+    font: 600 16px/18px Cormorant, sans-sefir;
+    letter-spacing: 1px;
+    justify-content: space-between;
 }
 
 .header__burger {
@@ -129,4 +137,77 @@ ul {
 
 .header__logo-img {
     vertical-align: bottom;
+}
+
+.menu__item {
+    margin: 0 2px;
+    transition: all 400ms ease-in-out 0s;
+}
+
+.menu__item:hover>.menu__item-link::after {
+    transform: rotate(-180deg);
+}
+
+.menu__item-link {
+    color: #111;
+    position: relative;
+    padding: 8px 18px;
+}
+ 
+.menu__item-link::after {
+    content: '\F0140';
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Material Design Icons";
+    font-style: normal;
+    position: absolute;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    transition: all 400ms ease-in-out 0s;
+}
+
+.menu__item-stock {
+    background-color: #222;
+    color: #fff;
+    float: left;
+    width: auto;
+    padding: 2px 5px;
+    font-size: 10px;
+    line-height: 14px;
+    position: absolute;
+    top: -8px;
+    margin: 0 3px;
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+
+.right-menu {
+    font: 400 13px/20px Roboto;
+}
+
+.rigth-menu__search {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.rigth-menu__search:hover>.rigth-menu__search-magnify {
+    transform: rotateY(180deg);
+}
+
+.rigth-menu__search-magnify {
+    width: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    transition: all 400ms ease-in-out 0s;
+}
+
+.rigth-menu__search-text {
+    font: 400 13px/20px Roboto;
+    vertical-align: top;
 }
